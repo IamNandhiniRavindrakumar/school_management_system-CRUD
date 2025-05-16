@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.staff-table{
+    width: 98%;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    box-sizing: border-box;
+}
+
+.staff-table tbody td button{
+    border:1px solid transparent;
+    padding:2px 15px 2px 15px 
+}
+
+.editBtn{
+    color:green;
+    font-weight:900;
+}
+
+.editBtn:hover{
+    border:1px solid green;
+    border-radius: 2px;
+}
+
+.dltBtn{
+    color:red;
+}
+
+.dltBtn:hover{
+    border:1px solid red;
+     border-radius: 2px;
+}
+
+.addBtn{
+    border:2px solid transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    color:rgb(80, 79, 79);
+    margin:5px;
+    box-sizing: border-box;
+}
+
+.addBtn:hover{
+    border:2px solid rgb(80, 79, 79);
+}
