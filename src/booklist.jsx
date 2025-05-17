@@ -1,4 +1,4 @@
-import booklist from './src/assets/IMG_20250516_125707.pdf'
+import booklist from '../assets/IMG_20250516_125707.pdf'
 
 export default function Booklist(){
     return(

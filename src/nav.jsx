@@ -9,7 +9,7 @@ import { TbTimeline } from "react-icons/tb";
 import { IoBookSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import schlLogo from './src/assets/schl_finallogo.avif'
+import schlLogo from '../assets/schl_finallogo.avif'
 
 
 export default function Menubar(){

@@ -1,9 +1,9 @@
 import './dashboard.css'
 import { useState,useEffect } from 'react';
-import bannerImg from './src/assets/d-banner-img.jpeg';
-import examLogo from './src/assets/exam_logo-removebg-preview.png';
-import teacherLogo from './src/assets/teacher_logo-removebg-preview.png';
-import studentLogo from './src/assets/student_icon-removebg-preview.png';
+import bannerImg from '../assets/d-banner-img.jpeg';
+import examLogo from '../assets/exam_logo-removebg-preview.png';
+import teacherLogo from '../assets/teacher_logo-removebg-preview.png';
+import studentLogo from '../assets/student_icon-removebg-preview.png';
 
 export default function Dashboard(){
   const [count, setCount] = useState(0);
