@@ -1,8 +1,16 @@
 import './dashboard.css'
 import { useState,useEffect } from 'react';
+import bannerImg from './src/assets/d-banner-img.jpeg';
+import examLogo from './src/assets/exam_logo-removebg-preview.png';
+import teacherLogo from './src/assets/teacher_logo-removebg-preview.png';
+import studentLogo from './src/assets/student_icon-removebg-preview.png';
 
 export default function Dashboard(){
   const [count, setCount] = useState(0);
+
+  const bgImg = {
+     background:`linear-gradient(#d5d2fdb6,#d5dfeeb4), url(${bannerImg})`
+  }
 
   useEffect(() => {
     fetch('https://6825c72b0f0188d7e72e6bb5.mockapi.io/staff/staff')
@@ -21,7 +29,7 @@ export default function Dashboard(){
     return(
         <>
        <div className="dashboard">
-         <div className="banner">
+         <div className="banner" style={bgImg}>
             <p>
                 <h2> "Nurturing Hearts. Empowering Minds. Inspiring Purpose."</h2>
                 At Shalom School of Excellence, we are more than a school — we are a Christ-centered community 
@@ -34,7 +42,7 @@ export default function Dashboard(){
             <div> 
                 <div className='student-list com-list'>
                     <div className='img-div'>
-                        <img src="./src/assets/student_icon-removebg-preview.png"/>
+                        <img src={studentLogo}/>
                     </div>
                     <div className='content'>
                         <h4>No. of students </h4>
@@ -43,7 +51,7 @@ export default function Dashboard(){
                 </div>     
                 <div className='staff-list com-list'>
                     <div className='img-div'>
-                        <img src="./src/assets/teacher_logo-removebg-preview.png"/>
+                        <img src={teacherLogo}/>
                     </div>
                     <div  className='content'>
                         <h4>No. of Staffs </h4>
@@ -54,7 +62,7 @@ export default function Dashboard(){
             <div className='examination'>
                 <div>
                      <h3>Examination fees</h3>
-                     <img src="./src/assets/exam_logo-removebg-preview.png"/>
+                     <img src={examLogo}/>
                 </div>
                 <div className='ex-content'>
                      <h2>April 14</h2>

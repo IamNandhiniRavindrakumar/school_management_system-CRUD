@@ -1,3 +1,5 @@
+import booklist from './src/assets/IMG_20250516_125707.pdf'
+
 export default function Booklist(){
     return(
         <>
@@ -7,7 +9,7 @@ export default function Booklist(){
             <h3>Here are the list of the books that we offer in this school. </h3>
             <div>
                 <iframe
-                    src="./src/assets/IMG_20250516_125707.pdf"
+                    src={booklist}
                     width="98%"
                     height="600px"
                     title="PDF Viewer"

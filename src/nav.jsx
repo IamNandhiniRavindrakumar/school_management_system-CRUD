@@ -9,6 +9,7 @@ import { TbTimeline } from "react-icons/tb";
 import { IoBookSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import schlLogo from './src/assets/schl_finallogo.avif'
 
 
 export default function Menubar(){
@@ -21,7 +22,7 @@ export default function Menubar(){
         <div className="nav-container">
             <div className="nav-left nav-com">
               
-                <h4><img style={{width:"40px", height:"40px",background:"white",borderRadius:"50%"}} src="./src/assets/schl_finallogo.avif"/></h4>
+                <h4><img style={{width:"40px", height:"40px",background:"white",borderRadius:"50%"}} src={schlLogo}/></h4>
                 <h4>Shalom School of Excellence</h4>
             </div>
             <div className="nav-right nav-com">
