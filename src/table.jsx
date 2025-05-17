@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { CiEdit } from "react-icons/ci";
 import { BsTrash3Fill } from "react-icons/bs";
-import './app.css'
+import './App.css'
 
 
 export default function TableComponent(fromApp){
