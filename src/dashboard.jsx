@@ -31,16 +31,18 @@ export default function Dashboard(){
         <>
        <div className="dashboard">
          <div className="banner" style={bgImg}>
-            <p>
-                <h2> "Nurturing Hearts. Empowering Minds. Inspiring Purpose."</h2>
-                At Shalom School of Excellence, we are more than a school — we are a Christ-centered community 
-                where students grow in wisdom, character, and compassion. Rooted in faith and driven
-                 by excellence, we cultivate a peaceful, healing environment where every child is seen,
-                  valued, and equipped to shine in their calling.
-            </p> 
+          <div>
+              <h2> "Nurturing Hearts. Empowering Minds. Inspiring Purpose."</h2>
+              <p>
+                  At Shalom School of Excellence, we are more than a school — we are a Christ-centered community 
+                  where students grow in wisdom, character, and compassion. Rooted in faith and driven
+                  by excellence, we cultivate a peaceful, healing environment where every child is seen,
+                    valued, and equipped to shine in their calling.
+              </p>
+          </div> 
          </div>
          <section>
-            <div> 
+            <div className='first-row'> 
                 <div className='student-list com-list'>
                     <div className='img-div'>
                         <img src={studentLogo}/>
@@ -69,7 +71,6 @@ export default function Dashboard(){
                      <h2>April 14</h2>
                      <h3>$2500</h3>
                 </div>
-               
             </div>
          </section>
        </div>

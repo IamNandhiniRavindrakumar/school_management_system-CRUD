@@ -17,16 +17,17 @@
 }
 
 .nav-com{
+    width:50%;
    display: flex;
-   justify-content: space-evenly;
+    align-items: center;
+    gap:15px
 }
 .nav-left{
-  align-items: center;
-  width:30%;
+     width:50%;
 }
 .nav-right{
- align-items: center;
- width:15%;
+    width:25%;
+    justify-content: end;
 }
 
 .sidebar{
@@ -79,60 +80,62 @@
 
 /* === Responsive === */
 
-/* On tablets and smaller: stack nav items vertically */
-@media (max-width: 768px) {
-  .nav-container {
-     display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-com{
-   display: flex;
-   gap:10px
+/* right and left sides width adjusted */
+@media screen and (min-width:550px) and (max-width:700px) {
+    .nav-left{
+     width:60%;
 }
-  
-.nav-left{
-  width:50%;
+.nav-right{
+    width:25%;
+    justify-content: end;
 }
-  .nav-right h5{
-    display: none;
-  }
-  
-}
-
-@media (max-width: 550px) {
-   .nav-container{
-    display: flex;
-    align-items: center;
-   }
-
-   .nav-left h4{
-    font-size: 16px;
-    font-weight: 600;
-   }
-
-   .nav-left{
-    align-items: center;
-    width:35%;
-    }
-    .nav-right{
-    align-items: center;
-    justify-content: start;
-    width:40%;
-    }
-
+    /* sidebar width decreased */
     .sidebar{
-      width: 250px;
-      backdrop-filter: blur(15px);
-      background-color:rgba(255, 255, 255,0.1);
+        width: 200px;
+        height: 90vh;
     }
 
-    .sidebar div{
-    display: flex;
-    align-items: center;
-    padding: 8px 10px;
-    font-size: 14px;
-    margin-bottom: 5px;
 }
 
+/* right side font size decreased and left side width increased */
+@media screen and (min-width:200px) and (max-width:610px) {
+    .nav-com{
+        display: flex;
+        gap:10px
+    }
+
+    .nav-left{
+        width:80%
+    }
+
+    .nav-right h5{
+       font-size: 15px;
+    }
+    /* sidebar width decreased */
+    .sidebar{
+        width: 200px;
+        height: 90vh;
+    }
 }
+
+/* left side font size decreased and sign out tag removed for mobile view */
+@media screen and (min-width:200px) and (max-width:500px) {
+    .nav-left h4{
+       font-size: 18px;
+    }
+
+    .nav-right h5{
+      display: none;
+    }
+}
+
+/* schl name font size decreased for below 250px */
+@media screen and (min-width:200px) and (max-width:250px) {
+    .nav-left h4{
+       font-size: 16px;
+    }
+}
+
+/* @media screen and (min-width:) and (max-width:) {
+
+} */
